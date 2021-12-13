@@ -20,6 +20,16 @@ const init = async () => {
 
     server.route({
         method: 'GET',
+        path: '/hapijs',
+        handler: (request, h) => {
+
+            return 'I am calling from HapiJS';
+        }
+    });
+
+
+    server.route({
+        method: 'GET',
         path: '/test',
         handler: (request, h) => {
 
